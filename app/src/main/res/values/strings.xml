@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RestAPITest</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_register">Registrar</string>
+    <string name="action_update">Actualizar</string>
+    <string name="please_wait">Por favor espera...</string>
+    <string name="users_correctly_registered">Usuario registrado!</string>
+    <string name="users_correctly_updated">Usuario actualizado!</string>
+    <string name="users_correctly_deleted">Usuario eliminado!</string>
+</resources>
