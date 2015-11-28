@@ -116,12 +116,16 @@ public class MainActivity extends AppCompatActivity implements LoadUserListView 
 
     @Override
     public void showLoading() {
-        progressDialog = new MaterialDialog.Builder(this)
-                .content(R.string.please_wait)
-                .progress(true, 0)
-                .cancelable(false)
-                .progressIndeterminateStyle(false)
-                .show();
+        if (progressDialog == null) {
+            progressDialog = new MaterialDialog.Builder(this)
+                    .content(R.string.please_wait)
+                    .progress(true, 0)
+                    .cancelable(false)
+                    .progressIndeterminateStyle(false)
+                    .show();
+        } else {
+            progressDialog.show();
+        }
     }
 
     @Override
